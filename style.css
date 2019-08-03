@@ -1,0 +1,136 @@
+body {
+	background-color: #f8f8f8;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+header {
+	background-color: #171a21;
+	height: 54px;
+	border-bottom: 1px solid grey;
+	display: flex;
+}
+.logo {
+	position: relative;
+	left: 25px;
+	margin: 5px;	
+}
+nav {
+	display: flex;
+	position: relative;
+	left: 500px;
+}
+nav ul {
+	list-style-type: none;
+	font-size: 17px;
+	font-family: 'Russo One', fantasy;
+	display: flex;
+	align-items: center;
+}
+nav ul li {
+	display: flex;
+	margin-right: 10px;
+}
+nav ul a {
+	color: grey;
+}
+nav ul a:hover {
+	color: white;
+}
+a {
+	text-decoration: none;
+}
+.h {
+	font-size: 18px;
+	color: black;
+	font-weight: 400;
+	background-color: #eaeaea;
+	overflow: hidden;
+}
+.short_desc {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+.detailed_desc {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+.system_req_p {
+	font-size: 15px;
+}
+.system_req {
+	clear: both;
+}
+form input {
+	width: 200px;
+	height: 20px;
+	font-size: 15px;
+	border: 1px solid grey;
+}
+textarea {
+	width: 240px;
+	height: 115px;
+	font-size: 15px;
+	border: 1px solid grey;
+}
+.img_short {
+	width: 250px;
+	outline: 2px solid black;
+}
+.img_short:hover {
+	outline: 3px solid grey;
+}
+.img_desc {
+	outline: 3px solid black;
+	float: left;
+	margin: 0px 20px 20px 0px;
+}
+.img_desc:hover {
+	outline: none;
+}
+input:focus, textarea:focus {
+	background-color: #9EDBFF;
+	color: white;
+}
+input:first-child {
+	text-transform: capitalize;
+}
+button {
+	color: black;
+	background-color: white;
+}
+button:hover {
+	background-color: #99AAFF;
+}
+button:active {
+	background-color: blue;
+}
+footer {
+	border-top: 1px solid grey;
+	height: 30px;
+	background-color: #EBE9F0;
+}
+.footer {
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+.catalog {
+	display: flex;
+	justify-content: flex-start;
+}
+.catalog > div {
+	display: flex;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.catalog > div > a > p {
+	margin: 0 auto;
+}

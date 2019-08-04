@@ -16,6 +16,23 @@ header {
 	left: 25px;
 	margin: 5px;	
 }
+.logo a {
+	display: inline-block;
+	width: 180px;
+	height: 50px;
+}
+.logo img {
+	height: 44px;
+}
+.logo h2 {
+	position: absolute;
+	color: grey;
+	left: 60px;
+	top: -10px;
+}
+.logo:hover h2 {
+	color: white;
+}
 nav {
 	display: flex;
 	position: relative;

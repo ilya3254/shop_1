@@ -1,9 +1,19 @@
+html {
+	height: 100%;
+}
 body {
 	background-color: #f8f8f8;
+	margin: 0;
+	font-family: 'Russo One', fantasy;
+	height: 100%;
 }
 .container {
+	background-color: #cdcdcd;
 	width: 1000px;
 	margin: 0 auto;
+	padding-bottom: 30px;
+	min-height: 96.8%;
+	height: auto !important;
 }
 header {
 	background-color: #171a21;
@@ -47,7 +57,7 @@ nav ul {
 }
 nav ul li {
 	display: flex;
-	margin-right: 10px;
+	margin-right: 15px;
 }
 nav ul a {
 	color: grey;
@@ -58,20 +68,27 @@ nav ul a:hover {
 a {
 	text-decoration: none;
 }
+.content {
+	padding-left: 30px;
+	padding-right: 30px;
+}
 .h {
+	padding-left: 5px;
 	font-size: 18px;
 	color: black;
 	font-weight: 400;
-	background-color: #eaeaea;
+	background-color: #bebebe;
 	overflow: hidden;
 }
 .short_desc {
+	width: 950px;
 	color: #707070;
 	font-size: 14px;
 	font-style: italic;
 	line-height: 16px;
 }
 .detailed_desc {
+	width: 940px;
 	color: #484343;
 	font-size: 16px;
 	font-weight: 400;
@@ -96,12 +113,19 @@ textarea {
 	font-size: 15px;
 	border: 1px solid grey;
 }
-.img_short {
-	width: 250px;
+.catalog img {
+	width: 293px;
 	outline: 2px solid black;
 }
-.img_short:hover {
-	outline: 3px solid grey;
+.catalog img:hover {
+	outline: 4px solid grey;
+}
+.catalog .promo p {
+	margin-left: 30px;
+	text-align: justify;
+}
+.catalog .promo img {
+	width: auto;
 }
 .img_desc {
 	outline: 3px solid black;
@@ -109,7 +133,7 @@ textarea {
 	margin: 0px 20px 20px 0px;
 }
 .img_desc:hover {
-	outline: none;
+	outline: 5px solid grey;
 }
 input:focus, textarea:focus {
 	background-color: #9EDBFF;
@@ -119,6 +143,7 @@ input:first-child {
 	text-transform: capitalize;
 }
 button {
+	font-family: 'Russo One', fantasy;
 	color: black;
 	background-color: white;
 }
@@ -127,11 +152,19 @@ button:hover {
 }
 button:active {
 	background-color: blue;
+	margin-top: 2px;
+	margin-left: 1px;
+}
+button p {
+	margin: 0;
 }
 footer {
+	position: relative;
+	margin: -30px auto 0;
+	width: 1000px;
 	border-top: 1px solid grey;
 	height: 30px;
-	background-color: #EBE9F0;
+	background-color: #bebebe;
 }
 .footer {
 	float: right;
@@ -140,14 +173,36 @@ footer {
 }
 .catalog {
 	display: flex;
-	justify-content: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .catalog > div {
+	margin-bottom: 25px;
 	display: flex;
-	margin-right: 20px;
-	margin-bottom: 20px;
 	text-align: center;
 }
 .catalog > div > a > p {
 	margin: 0 auto;
+}
+.promo div {
+	flex-direction: column;
+}
+.welcome {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	text-align: justify;
+}
+.welcome p {
+	width: 400px;
+	margin: 0;
+}
+.welcome img {
+	margin-top: 20px;
+	width: 500px;
+	outline: 2px solid black;
+}
+.welcome img:hover {
+	width: 500px;
+	outline: 4px solid grey;
 }
